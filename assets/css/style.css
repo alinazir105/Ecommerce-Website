@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+.nav-buttons{
+    margin-left: 60%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+  
+h1{
+    font-family: 'Poppins';
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2{
+    font-family: 'Poppins';
+    font-size: 1.9rem;
+    font-weight: 600;
+}
+
+h3{
+    font-family: 'Poppins';
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+h4{
+    font-family: 'Poppins';
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+h5{
+    font-family: 'Poppins';
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+h6{
+    font-family: 'Poppins';
+    color: #d8d8d8;
+}
+
+.navbar{
+    font-size: 16px;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+    top: 0;
+    left: 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-light .navbar-nav .nav-link{
+    padding: 0px 20px ;
+    color: black;
+    transition: 0.4s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar i:hover,
+.navbar-light .navbar-nav .nav-link.active
+.navbar i:hover{
+    color: coral;
+}
+
+.navbar i{
+    font-size: 1.2rem;
+    padding: 0 0.7px;
+    transition: 0.4s ease;
+    /* font-weight: 500; */
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+@media only screen and (max-width:990px){
+    .nav-buttons{margin: 10px;}
+
+    .nav-buttons ul{
+        margin: 1rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .nav-buttons ul .fas{
+        margin: 20px 5px 10px 20px;
+    }
+}
+
+#home{
+    background-image: url('../imgs/back.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position-x: 90px;
+    background-position-y: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#home span{
+    color: coral;
+}
+
+#new .one img{
+    width: 90%;
+    height: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#new .one{
+    position: relative;
+}
+
+#new .one .details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: burlywood;
+    font-weight: bold;
+    transition: 0.4s ease;
+    opacity: 0.8;
+    background-color: rgb(1, 1, 1);
+    width: 90%;
+    height: 90%;
+}
+
+#new .one .details:hover{
+    background-color: cornsilk;
+}
+
+#new .one:nth-child(1) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+}
+
+#new .one:nth-child(2) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#new .one:nth-child(3) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end;
+}
+
+/* product */
+.product{
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.product img{
+    transition: 0.3s all;
+}
+
+.product:hover img{
+    opacity: 0.7;
+}
+.buy-btn{
+    background-color: #0E0C0A;
+    color: white;
+    padding: 12px 30px 12px 30px;
+    border: none;
+}
+
+.buy-btn:hover{
+    background-color: coral;
+}
+
+/* banner */
+#banner{
+    background-image: url(../imgs/back.jpg);
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 80px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#banner h1{
+    color: darkblue;
+}
+#banner .container .shop-btn{
+    background-color: #0E0C0A;
+    color: white;
+    padding: 12px 30px 12px 30px;
+    border: none;
+}
+
+#banner .container .shop-btn:hover{
+    background-color: coral;
+}
+
+.copyright{
+    text-align: center;
+    color: darkgray;
+    margin: 20px;
+}
+
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+.single-product input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.single-product input:focus{
+    outline: none;
+}
+
+.add-to-cart-btn{
+    background-color: coral;
+    opacity: 1;
+    transition: 0.4s all;
+    color: white;
+    padding: 12px 30px 12px 30px;
+    border: none;
+}
+
+.add-to-cart-btn:hover{
+    background-color: #222222;
+}
+
+/* Cart */
+.cart table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart .product-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cart th{
+    text-align: left;
+    padding: 5px 10px;
+    color: white;
+    background-color: coral;
+}
+
+.cart td{
+    padding: 10px 20px;
+}
+
+.cart td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.cart input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.cart input:focus{
+    outline: none;
+}
+
+.cart-total{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cart-total table{
+    width: 100%;
+    max-width: 500px;
+    border-top: 3px solid coral;
+}
+
+td :last-child{
+    text-align: right;
+}
+
+th :last-child{
+    text-align: right;
+}
+
+.checkout-container{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.checkout-btn{
+    display: flex;
+    justify-content: flex-end;
+    background-color: coral;
+    opacity: 1;
+    transition: 0.4s all;
+    color: white;
+    padding: 12px 30px 12px 30px;
+    border: none;
+    width: 100%;
+}
+
+.checkout-btn:hover{
+    background-color: coral;
+    color: red;
+}
+
+/* Login */
+#login-form{
+    width: 50%;
+    margin: 5px auto;
+    text-align: center;
+    padding: 20px;
+    margin: 0px 0px 0px 580px;
+    border-top: 1px solid coral;
+}
+
+#login-form input{
+    width: 50%;
+    margin: 5px auto;
+}
+
+#login-form #login-btn{
+    background-color: coral;
+    color: white;
+}
+
+#login-form #register-url{
+    color: coral;
+}
+
+@media (max-width: 767px) {
+    #login-form {
+        width: 100%; /* Make the form full width on smaller screens */
+        margin: 0; /* Remove margin for smaller screens */
+    }
+}
+
+/* Register */
+#register-form{
+    width: 50%;
+    margin: 5px auto;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid coral;
+}
+
+#register-form input{
+    width: 50%;
+    margin: 5px auto; 
+}
+
+#register-form #register-btn{
+    background-color: coral;
+    color: white;
+}
+
+#register-form #login-url{
+    color: coral;
+}
+
+/* Account */
+
+#account-form{
+    width: 50%;
+    margin: 35px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+#account-form input{
+    margin: 5px auto;
+}
+
+#account-form #change-pass-btn{
+    color: white;
+    background-color: coral;
+}
+
+.account-info #orders-btn,#logout-btn{
+    color: coral;
+    text-decoration: none;
+}
+
+/* Checkout */
+#checkout-form .checkout-small-element{
+    display: inline-block;
+    width: 48%;
+    margin: 10px auto;
+}
+
+#checkout-form .checkout-large-element{
+    width: 96.5%;
+}
+
+#checkout-form .checkout-btn-container{
+    margin: 10px;
+    text-align: right;
+    margin-right: 40px;
+}
+
+#checkout-form #checkout-btn{
+    color: white;
+    background-color: coral;
+}
+
+
+/* Contact */
+#contact span{
+    color: coral;
+}
